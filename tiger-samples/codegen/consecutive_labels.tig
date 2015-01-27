@@ -1,0 +1,17 @@
+/* make sure CFG properly handles consecutive labels */
+void main() begin
+	begin
+		var i: int := 0;
+		var j: int := 3;
+
+		while i < j do
+			printi(i);
+			i := i + 1;
+		enddo;
+		/* back-to-back while loops create adjacent labels */
+		while i >= 0 do
+			printi(i);
+			i := i - 1;
+		enddo;
+	end;
+end;

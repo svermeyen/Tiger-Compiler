@@ -1,0 +1,14 @@
+/* 
+   [CB 11/22/14]
+   very simple tiger program.  I want to get this compiling to
+   actual working assembly first! */
+
+void main() begin
+  begin
+	var a: int := 2;
+	var b: int := 5;
+	var c: int;	
+	c := a+b;
+	printi(c);
+  end;
+end;

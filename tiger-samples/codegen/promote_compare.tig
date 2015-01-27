@@ -1,0 +1,23 @@
+/* tests that comparison operators do promotion... */
+
+void main() begin
+	begin
+		var x: fixedpt := 5.0;
+
+		printf(0.0);
+		if x < 10 then
+			printf(1000.0);
+		endif;
+
+		x := 20.0;
+		if x > 10 then
+			printf(2000.0);
+		endif;
+
+		if 10 > x then
+			printi(1848192);
+		endif;
+
+		printf(3000.0);
+	end;
+end;

@@ -1,0 +1,16 @@
+/* tests array initialization, assignment, and loading. */
+
+void main() 
+begin
+	begin
+		type Array = array[12] of int;
+		var arr: Array := 1;
+        var i, i2 : int := 0;
+
+		arr[7] := 5;
+        for i := 0 to 11 do
+            printi(arr[i]); /*should be all 1s.*/
+        enddo; 
+
+	end;
+end;

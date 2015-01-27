@@ -1,0 +1,28 @@
+/* makes sure comparing fp to fp works 
+   should print 
+   3.4
+   2.9
+	*/
+
+void main() begin
+  begin
+	var a: fixedpt := 2.9;
+	var b: fixedpt := 3.4;
+	var c,d: fixedpt;	
+
+	/* print the larger one */
+	if a > b then
+		printf(a);
+	else
+		printf(b);
+	endif;
+
+	/* then print the smaller one */
+	if b < a then
+		printf(b);
+	else
+		printf(a);
+	endif;
+
+  end;
+end;

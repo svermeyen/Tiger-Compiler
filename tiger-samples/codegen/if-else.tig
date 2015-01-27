@@ -1,0 +1,17 @@
+/* 
+	test basic if-else functionality.
+   */
+
+void main() begin
+  begin
+	var a: int; 
+
+	if 1 < 5 then
+		a := 100;
+	else
+		a := 2;
+	endif;
+
+	printi(a);
+  end;
+end;

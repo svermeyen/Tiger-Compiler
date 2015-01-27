@@ -1,0 +1,14 @@
+/* tests that we can promote for arithmetic operations */
+
+void main() begin
+	begin
+		var x, y, z: fixedpt := 4;
+		var i: int := 3;
+		x := x + 96;
+		y := 2 * 100;
+		z := x * i;
+		printf(x);
+		printf(y);
+		printf(z);
+	end;
+end;

@@ -1,0 +1,9 @@
+/* tests that we can promote for LI/LI.S instruction */
+
+void main() begin
+	begin
+		var x: fixedpt := 4;
+		x := x + 96.0;
+		printf(x);
+	end;
+end;

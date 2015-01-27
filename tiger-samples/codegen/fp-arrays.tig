@@ -1,0 +1,16 @@
+/* tests array initialization, assignment, and loading for fixedpts */
+
+void main() 
+begin
+	begin
+		type Array = array[12] of fixedpt;
+		var arr: Array := 2.0;
+        var i: int := 0;
+
+		arr[7] := 5.0;
+        for i := 0 to 11 do
+            printf(arr[i]); /*should be all 1s.*/
+        enddo; 
+
+	end;
+end;

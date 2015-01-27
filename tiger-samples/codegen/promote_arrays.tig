@@ -1,0 +1,13 @@
+/* tests array initialization, assignment, and loading. */
+
+void main() 
+begin
+	begin
+		type Array = array[6] of fixedpt;
+		type IntArray = array[6] of int;
+		var int_arr: IntArray := 95;
+		var arr: Array := 5;
+		arr[3] := int_arr[3];
+        printf(arr[3]); 
+	end;
+end;

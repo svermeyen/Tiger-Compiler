@@ -1,0 +1,11 @@
+/* tests array initialization, assignment, and loading. */
+
+void main() 
+begin
+	begin
+		type Array = array[6] of fixedpt;
+		var arr: Array := 17.0;
+		arr[3] := 14.0;
+        printf(arr[3]); 
+	end;
+end;

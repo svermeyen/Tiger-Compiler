@@ -1,0 +1,6 @@
+void main() begin
+	begin
+		var i: int := 1000;
+		printf(i);
+	end;
+end;

@@ -1,0 +1,17 @@
+/* tests that read_sys calls work properly */
+
+void main() begin
+	begin
+		var i: int := 0;
+		var f: fixedpt := 1.0;
+
+		i := geti();
+		printi(i);
+
+		f := getf();
+		printf(f);
+
+		f := geti();
+		printf(f);
+	end;
+end;

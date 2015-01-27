@@ -1,0 +1,17 @@
+/* 
+	floating point test program.
+    */
+
+void main() begin
+  begin
+	var a: fixedpt := 2.9;
+	var b: fixedpt := 3.4;
+	var c,d: fixedpt;	
+	c := a+b;
+	printf(c);
+
+	d := a*b;
+	printf(d);
+
+  end;
+end;
