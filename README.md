@@ -1,0 +1,2 @@
+# Tiger-Compiler
+This is a compiler in Java for the small Tiger language. Tiger supports basic operations, custom data types, and floating point arithmetic. The target platform is MIPS, and function calls are currently not implemented. Scanning, parsing, code optimization and generation are present. The front-end of the compiler was constructed using ANTLR, and multiple intermediate code forms including Abstract Syntax Tree and a 4-tuple instruction list are used.
